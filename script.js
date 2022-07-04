@@ -19,8 +19,10 @@ function setScore() {
     // return currentScore;
 }
 
-function setHighscore(score) {
-    // document.querySelector("highscorevalue").innerHTML = score;
+
+function victory() {
+    document.body.style.backgroundColor = "#6ED01A";
+    document.querySelector(".inputField").style.backgroundColor = "#6ED01A";
 }
 
 function checkNumber() {
@@ -38,7 +40,8 @@ function checkNumber() {
         setScore();
     }
     else if (userNumber == randomNumber) {
-        suggestiontext.innerHTML = "You guessed right. 🥳";
+        suggestiontext.innerHTML = "You guessed right.";
+        victory();
         if (currentHighScore < currentScore) {
             currentHighScore = currentScore;
             document.querySelector(".highscorevalue").innerHTML = currentScore;
