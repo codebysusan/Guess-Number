@@ -14,9 +14,7 @@ function generateNumber() {
 }
 
 function setScore() {
-
     document.querySelector('.currentvalue').innerHTML = currentScore;
-    // return currentScore;
 }
 
 
@@ -54,12 +52,6 @@ function tryAgain() {
     currentScore = 20;
     setScore();
     randomNumber = generateNumber();
+    document.body.style.backgroundColor = "#53354a";
+    document.querySelector(".inputField").style.backgroundColor = "#53354a";
 }
-
-
-
-
-
-
-
-
